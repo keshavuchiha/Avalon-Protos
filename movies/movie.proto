@@ -1,0 +1,23 @@
+syntax = "proto3";
+package avalon.movies;
+
+import "google/type/date.proto";
+import "genres/genre.proto";
+import "person/person.proto";
+
+option java_multiple_files = true;
+option java_outer_classname = "Movies";
+option java_package = "com.avalon.protos.movies";
+
+message Movie {
+  string title = 1;
+  optional google.type.Date release_date = 2;
+  string synopsis = 3;
+  optional int32 runtime = 4;
+  optional avalon.genres.Genres genre = 5;
+  repeated avalon.person.Person cast = 7;
+}
+
+message AddMovieRequest {
+  Movie movie = 1;
+}

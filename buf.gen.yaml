@@ -1,0 +1,8 @@
+version: v1
+
+plugins:
+  - plugin: buf.build/protocolbuffers/java
+    out: java-service/target/generated-sources/protobuf/java
+
+  - plugin: buf.build/grpc/java
+    out: java-service/target/generated-sources/protobuf/grpc

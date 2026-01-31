@@ -1,0 +1,22 @@
+// genres/genres.proto
+syntax = "proto3";
+
+package avalon.genres;
+
+option java_multiple_files = true;
+option java_package = "com.avalon.protos.genres";
+
+enum Genre {
+  GENRE_UNSPECIFIED = 0;
+  GENRE_ACTION = 1;
+  GENRE_COMEDY = 2;
+  GENRE_DRAMA = 3;
+  GENRE_HORROR = 4;
+  GENRE_ROMANCE = 5;
+  GENRE_SCIENCE_FICTION = 6;
+  GENRE_THRILLER = 7;
+  GENRE_ADVENTURE = 8;
+}
+message Genres {
+  repeated Genre genres = 1;
+}

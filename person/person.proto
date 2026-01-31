@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package avalon.person;
+import "person/contact/contact.proto";
+import "google/type/date.proto";
+
+option java_package = "com.avalon.protos.person";
+option java_multiple_files = true;
+
+message Person {
+    string name = 1;
+    google.type.Date birth_date = 2;
+    repeated contact.Contact contacts = 3;
+}
