@@ -3,11 +3,11 @@
 // source: movies/movie.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.movies;
+package com.avalon.movies;
 
 @com.google.protobuf.Generated
-public final class Movies extends com.google.protobuf.GeneratedFile {
-  private Movies() {}
+public final class MovieProto extends com.google.protobuf.GeneratedFile {
+  private MovieProto() {}
   static {
     com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
       com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
@@ -15,7 +15,7 @@ public final class Movies extends com.google.protobuf.GeneratedFile {
       /* minor= */ 33,
       /* patch= */ 5,
       /* suffix= */ "",
-      "Movies");
+      "MovieProto");
   }
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
@@ -56,15 +56,17 @@ public final class Movies extends com.google.protobuf.GeneratedFile {
       "lon.person.PersonR\004castB\017\n\r_release_date" +
       "B\n\n\010_runtimeB\010\n\006_genre\"=\n\017AddMovieReques" +
       "t\022*\n\005movie\030\001 \001(\0132\024.avalon.movies.MovieR\005" +
-      "movieB$\n\030com.avalon.protos.moviesB\006Movie" +
-      "sP\001b\006proto3"
+      "movieBt\n\021com.avalon.moviesB\nMovieProtoP\001" +
+      "\242\002\003AMX\252\002\rAvalon.Movies\312\002\rAvalon\\Movies\342\002" +
+      "\031Avalon\\Movies\\GPBMetadata\352\002\016Avalon::Mov" +
+      "iesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.type.DateProto.getDescriptor(),
-          com.avalon.protos.genres.GenreOuterClass.getDescriptor(),
-          com.avalon.protos.person.PersonOuterClass.getDescriptor(),
+          com.avalon.genres.GenreProto.getDescriptor(),
+          com.avalon.person.PersonProto.getDescriptor(),
         });
     internal_static_avalon_movies_Movie_descriptor =
       getDescriptor().getMessageType(0);
@@ -80,8 +82,8 @@ public final class Movies extends com.google.protobuf.GeneratedFile {
         new java.lang.String[] { "Movie", });
     descriptor.resolveAllFeaturesImmutable();
     com.google.type.DateProto.getDescriptor();
-    com.avalon.protos.genres.GenreOuterClass.getDescriptor();
-    com.avalon.protos.person.PersonOuterClass.getDescriptor();
+    com.avalon.genres.GenreProto.getDescriptor();
+    com.avalon.person.PersonProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

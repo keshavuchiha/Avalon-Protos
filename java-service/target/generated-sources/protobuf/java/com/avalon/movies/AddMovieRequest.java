@@ -3,7 +3,7 @@
 // source: movies/movie.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.movies;
+package com.avalon.movies;
 
 /**
  * Protobuf type {@code avalon.movies.AddMovieRequest}
@@ -32,20 +32,20 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.avalon.protos.movies.Movies.internal_static_avalon_movies_AddMovieRequest_descriptor;
+    return com.avalon.movies.MovieProto.internal_static_avalon_movies_AddMovieRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.avalon.protos.movies.Movies.internal_static_avalon_movies_AddMovieRequest_fieldAccessorTable
+    return com.avalon.movies.MovieProto.internal_static_avalon_movies_AddMovieRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.avalon.protos.movies.AddMovieRequest.class, com.avalon.protos.movies.AddMovieRequest.Builder.class);
+            com.avalon.movies.AddMovieRequest.class, com.avalon.movies.AddMovieRequest.Builder.class);
   }
 
   private int bitField0_;
   public static final int MOVIE_FIELD_NUMBER = 1;
-  private com.avalon.protos.movies.Movie movie_;
+  private com.avalon.movies.Movie movie_;
   /**
    * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
    * @return Whether the movie field is set.
@@ -59,15 +59,15 @@ private static final long serialVersionUID = 0L;
    * @return The movie.
    */
   @java.lang.Override
-  public com.avalon.protos.movies.Movie getMovie() {
-    return movie_ == null ? com.avalon.protos.movies.Movie.getDefaultInstance() : movie_;
+  public com.avalon.movies.Movie getMovie() {
+    return movie_ == null ? com.avalon.movies.Movie.getDefaultInstance() : movie_;
   }
   /**
    * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
    */
   @java.lang.Override
-  public com.avalon.protos.movies.MovieOrBuilder getMovieOrBuilder() {
-    return movie_ == null ? com.avalon.protos.movies.Movie.getDefaultInstance() : movie_;
+  public com.avalon.movies.MovieOrBuilder getMovieOrBuilder() {
+    return movie_ == null ? com.avalon.movies.Movie.getDefaultInstance() : movie_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -110,10 +110,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.avalon.protos.movies.AddMovieRequest)) {
+    if (!(obj instanceof com.avalon.movies.AddMovieRequest)) {
       return super.equals(obj);
     }
-    com.avalon.protos.movies.AddMovieRequest other = (com.avalon.protos.movies.AddMovieRequest) obj;
+    com.avalon.movies.AddMovieRequest other = (com.avalon.movies.AddMovieRequest) obj;
 
     if (hasMovie() != other.hasMovie()) return false;
     if (hasMovie()) {
@@ -140,44 +140,44 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(byte[] data)
+  public static com.avalon.movies.AddMovieRequest parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(java.io.InputStream input)
+  public static com.avalon.movies.AddMovieRequest parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -185,26 +185,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static com.avalon.protos.movies.AddMovieRequest parseDelimitedFrom(java.io.InputStream input)
+  public static com.avalon.movies.AddMovieRequest parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static com.avalon.protos.movies.AddMovieRequest parseDelimitedFrom(
+  public static com.avalon.movies.AddMovieRequest parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.movies.AddMovieRequest parseFrom(
+  public static com.avalon.movies.AddMovieRequest parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -217,7 +217,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.avalon.protos.movies.AddMovieRequest prototype) {
+  public static Builder newBuilder(com.avalon.movies.AddMovieRequest prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -238,21 +238,21 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:avalon.movies.AddMovieRequest)
-      com.avalon.protos.movies.AddMovieRequestOrBuilder {
+      com.avalon.movies.AddMovieRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.avalon.protos.movies.Movies.internal_static_avalon_movies_AddMovieRequest_descriptor;
+      return com.avalon.movies.MovieProto.internal_static_avalon_movies_AddMovieRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.avalon.protos.movies.Movies.internal_static_avalon_movies_AddMovieRequest_fieldAccessorTable
+      return com.avalon.movies.MovieProto.internal_static_avalon_movies_AddMovieRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.avalon.protos.movies.AddMovieRequest.class, com.avalon.protos.movies.AddMovieRequest.Builder.class);
+              com.avalon.movies.AddMovieRequest.class, com.avalon.movies.AddMovieRequest.Builder.class);
     }
 
-    // Construct using com.avalon.protos.movies.AddMovieRequest.newBuilder()
+    // Construct using com.avalon.movies.AddMovieRequest.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -283,17 +283,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.avalon.protos.movies.Movies.internal_static_avalon_movies_AddMovieRequest_descriptor;
+      return com.avalon.movies.MovieProto.internal_static_avalon_movies_AddMovieRequest_descriptor;
     }
 
     @java.lang.Override
-    public com.avalon.protos.movies.AddMovieRequest getDefaultInstanceForType() {
-      return com.avalon.protos.movies.AddMovieRequest.getDefaultInstance();
+    public com.avalon.movies.AddMovieRequest getDefaultInstanceForType() {
+      return com.avalon.movies.AddMovieRequest.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.avalon.protos.movies.AddMovieRequest build() {
-      com.avalon.protos.movies.AddMovieRequest result = buildPartial();
+    public com.avalon.movies.AddMovieRequest build() {
+      com.avalon.movies.AddMovieRequest result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -301,14 +301,14 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.avalon.protos.movies.AddMovieRequest buildPartial() {
-      com.avalon.protos.movies.AddMovieRequest result = new com.avalon.protos.movies.AddMovieRequest(this);
+    public com.avalon.movies.AddMovieRequest buildPartial() {
+      com.avalon.movies.AddMovieRequest result = new com.avalon.movies.AddMovieRequest(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.avalon.protos.movies.AddMovieRequest result) {
+    private void buildPartial0(com.avalon.movies.AddMovieRequest result) {
       int from_bitField0_ = bitField0_;
       int to_bitField0_ = 0;
       if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -322,16 +322,16 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.avalon.protos.movies.AddMovieRequest) {
-        return mergeFrom((com.avalon.protos.movies.AddMovieRequest)other);
+      if (other instanceof com.avalon.movies.AddMovieRequest) {
+        return mergeFrom((com.avalon.movies.AddMovieRequest)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.avalon.protos.movies.AddMovieRequest other) {
-      if (other == com.avalon.protos.movies.AddMovieRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.avalon.movies.AddMovieRequest other) {
+      if (other == com.avalon.movies.AddMovieRequest.getDefaultInstance()) return this;
       if (other.hasMovie()) {
         mergeMovie(other.getMovie());
       }
@@ -385,9 +385,9 @@ private static final long serialVersionUID = 0L;
     }
     private int bitField0_;
 
-    private com.avalon.protos.movies.Movie movie_;
+    private com.avalon.movies.Movie movie_;
     private com.google.protobuf.SingleFieldBuilder<
-        com.avalon.protos.movies.Movie, com.avalon.protos.movies.Movie.Builder, com.avalon.protos.movies.MovieOrBuilder> movieBuilder_;
+        com.avalon.movies.Movie, com.avalon.movies.Movie.Builder, com.avalon.movies.MovieOrBuilder> movieBuilder_;
     /**
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      * @return Whether the movie field is set.
@@ -399,9 +399,9 @@ private static final long serialVersionUID = 0L;
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      * @return The movie.
      */
-    public com.avalon.protos.movies.Movie getMovie() {
+    public com.avalon.movies.Movie getMovie() {
       if (movieBuilder_ == null) {
-        return movie_ == null ? com.avalon.protos.movies.Movie.getDefaultInstance() : movie_;
+        return movie_ == null ? com.avalon.movies.Movie.getDefaultInstance() : movie_;
       } else {
         return movieBuilder_.getMessage();
       }
@@ -409,7 +409,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      */
-    public Builder setMovie(com.avalon.protos.movies.Movie value) {
+    public Builder setMovie(com.avalon.movies.Movie value) {
       if (movieBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -426,7 +426,7 @@ private static final long serialVersionUID = 0L;
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      */
     public Builder setMovie(
-        com.avalon.protos.movies.Movie.Builder builderForValue) {
+        com.avalon.movies.Movie.Builder builderForValue) {
       if (movieBuilder_ == null) {
         movie_ = builderForValue.build();
       } else {
@@ -439,11 +439,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      */
-    public Builder mergeMovie(com.avalon.protos.movies.Movie value) {
+    public Builder mergeMovie(com.avalon.movies.Movie value) {
       if (movieBuilder_ == null) {
         if (((bitField0_ & 0x00000001) != 0) &&
           movie_ != null &&
-          movie_ != com.avalon.protos.movies.Movie.getDefaultInstance()) {
+          movie_ != com.avalon.movies.Movie.getDefaultInstance()) {
           getMovieBuilder().mergeFrom(value);
         } else {
           movie_ = value;
@@ -473,7 +473,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      */
-    public com.avalon.protos.movies.Movie.Builder getMovieBuilder() {
+    public com.avalon.movies.Movie.Builder getMovieBuilder() {
       bitField0_ |= 0x00000001;
       onChanged();
       return internalGetMovieFieldBuilder().getBuilder();
@@ -481,23 +481,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      */
-    public com.avalon.protos.movies.MovieOrBuilder getMovieOrBuilder() {
+    public com.avalon.movies.MovieOrBuilder getMovieOrBuilder() {
       if (movieBuilder_ != null) {
         return movieBuilder_.getMessageOrBuilder();
       } else {
         return movie_ == null ?
-            com.avalon.protos.movies.Movie.getDefaultInstance() : movie_;
+            com.avalon.movies.Movie.getDefaultInstance() : movie_;
       }
     }
     /**
      * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
-        com.avalon.protos.movies.Movie, com.avalon.protos.movies.Movie.Builder, com.avalon.protos.movies.MovieOrBuilder> 
+        com.avalon.movies.Movie, com.avalon.movies.Movie.Builder, com.avalon.movies.MovieOrBuilder> 
         internalGetMovieFieldBuilder() {
       if (movieBuilder_ == null) {
         movieBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-            com.avalon.protos.movies.Movie, com.avalon.protos.movies.Movie.Builder, com.avalon.protos.movies.MovieOrBuilder>(
+            com.avalon.movies.Movie, com.avalon.movies.Movie.Builder, com.avalon.movies.MovieOrBuilder>(
                 getMovie(),
                 getParentForChildren(),
                 isClean());
@@ -510,12 +510,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:avalon.movies.AddMovieRequest)
-  private static final com.avalon.protos.movies.AddMovieRequest DEFAULT_INSTANCE;
+  private static final com.avalon.movies.AddMovieRequest DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.avalon.protos.movies.AddMovieRequest();
+    DEFAULT_INSTANCE = new com.avalon.movies.AddMovieRequest();
   }
 
-  public static com.avalon.protos.movies.AddMovieRequest getDefaultInstance() {
+  public static com.avalon.movies.AddMovieRequest getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -551,7 +551,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  public com.avalon.protos.movies.AddMovieRequest getDefaultInstanceForType() {
+  public com.avalon.movies.AddMovieRequest getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

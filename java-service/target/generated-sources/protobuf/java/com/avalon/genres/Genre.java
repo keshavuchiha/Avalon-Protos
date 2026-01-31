@@ -3,7 +3,7 @@
 // source: genres/genre.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.genres;
+package com.avalon.genres;
 
 /**
  * Protobuf enum {@code avalon.genres.Genre}
@@ -160,7 +160,7 @@ public enum Genre
   }
   public static com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return com.avalon.protos.genres.GenreOuterClass.getDescriptor().getEnumTypes().get(0);
+    return com.avalon.genres.GenreProto.getDescriptor().getEnumTypes().get(0);
   }
 
   private static final Genre[] VALUES = values();

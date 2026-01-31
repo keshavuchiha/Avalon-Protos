@@ -3,7 +3,7 @@
 // source: movies/movie.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.movies;
+package com.avalon.movies;
 
 /**
  * Protobuf type {@code avalon.movies.Movie}
@@ -35,15 +35,15 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.avalon.protos.movies.Movies.internal_static_avalon_movies_Movie_descriptor;
+    return com.avalon.movies.MovieProto.internal_static_avalon_movies_Movie_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.avalon.protos.movies.Movies.internal_static_avalon_movies_Movie_fieldAccessorTable
+    return com.avalon.movies.MovieProto.internal_static_avalon_movies_Movie_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.avalon.protos.movies.Movie.class, com.avalon.protos.movies.Movie.Builder.class);
+            com.avalon.movies.Movie.class, com.avalon.movies.Movie.Builder.class);
   }
 
   private int bitField0_;
@@ -171,7 +171,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int GENRE_FIELD_NUMBER = 5;
-  private com.avalon.protos.genres.Genres genre_;
+  private com.avalon.genres.Genres genre_;
   /**
    * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
    * @return Whether the genre field is set.
@@ -185,32 +185,32 @@ private static final long serialVersionUID = 0L;
    * @return The genre.
    */
   @java.lang.Override
-  public com.avalon.protos.genres.Genres getGenre() {
-    return genre_ == null ? com.avalon.protos.genres.Genres.getDefaultInstance() : genre_;
+  public com.avalon.genres.Genres getGenre() {
+    return genre_ == null ? com.avalon.genres.Genres.getDefaultInstance() : genre_;
   }
   /**
    * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
    */
   @java.lang.Override
-  public com.avalon.protos.genres.GenresOrBuilder getGenreOrBuilder() {
-    return genre_ == null ? com.avalon.protos.genres.Genres.getDefaultInstance() : genre_;
+  public com.avalon.genres.GenresOrBuilder getGenreOrBuilder() {
+    return genre_ == null ? com.avalon.genres.Genres.getDefaultInstance() : genre_;
   }
 
   public static final int CAST_FIELD_NUMBER = 7;
   @SuppressWarnings("serial")
-  private java.util.List<com.avalon.protos.person.Person> cast_;
+  private java.util.List<com.avalon.person.Person> cast_;
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
   @java.lang.Override
-  public java.util.List<com.avalon.protos.person.Person> getCastList() {
+  public java.util.List<com.avalon.person.Person> getCastList() {
     return cast_;
   }
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.avalon.protos.person.PersonOrBuilder> 
+  public java.util.List<? extends com.avalon.person.PersonOrBuilder> 
       getCastOrBuilderList() {
     return cast_;
   }
@@ -225,14 +225,14 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
   @java.lang.Override
-  public com.avalon.protos.person.Person getCast(int index) {
+  public com.avalon.person.Person getCast(int index) {
     return cast_.get(index);
   }
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
   @java.lang.Override
-  public com.avalon.protos.person.PersonOrBuilder getCastOrBuilder(
+  public com.avalon.person.PersonOrBuilder getCastOrBuilder(
       int index) {
     return cast_.get(index);
   }
@@ -310,10 +310,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.avalon.protos.movies.Movie)) {
+    if (!(obj instanceof com.avalon.movies.Movie)) {
       return super.equals(obj);
     }
-    com.avalon.protos.movies.Movie other = (com.avalon.protos.movies.Movie) obj;
+    com.avalon.movies.Movie other = (com.avalon.movies.Movie) obj;
 
     if (!getTitle()
         .equals(other.getTitle())) return false;
@@ -372,44 +372,44 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(byte[] data)
+  public static com.avalon.movies.Movie parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(java.io.InputStream input)
+  public static com.avalon.movies.Movie parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -417,26 +417,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static com.avalon.protos.movies.Movie parseDelimitedFrom(java.io.InputStream input)
+  public static com.avalon.movies.Movie parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static com.avalon.protos.movies.Movie parseDelimitedFrom(
+  public static com.avalon.movies.Movie parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.movies.Movie parseFrom(
+  public static com.avalon.movies.Movie parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -449,7 +449,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.avalon.protos.movies.Movie prototype) {
+  public static Builder newBuilder(com.avalon.movies.Movie prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -470,21 +470,21 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:avalon.movies.Movie)
-      com.avalon.protos.movies.MovieOrBuilder {
+      com.avalon.movies.MovieOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.avalon.protos.movies.Movies.internal_static_avalon_movies_Movie_descriptor;
+      return com.avalon.movies.MovieProto.internal_static_avalon_movies_Movie_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.avalon.protos.movies.Movies.internal_static_avalon_movies_Movie_fieldAccessorTable
+      return com.avalon.movies.MovieProto.internal_static_avalon_movies_Movie_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.avalon.protos.movies.Movie.class, com.avalon.protos.movies.Movie.Builder.class);
+              com.avalon.movies.Movie.class, com.avalon.movies.Movie.Builder.class);
     }
 
-    // Construct using com.avalon.protos.movies.Movie.newBuilder()
+    // Construct using com.avalon.movies.Movie.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -532,17 +532,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.avalon.protos.movies.Movies.internal_static_avalon_movies_Movie_descriptor;
+      return com.avalon.movies.MovieProto.internal_static_avalon_movies_Movie_descriptor;
     }
 
     @java.lang.Override
-    public com.avalon.protos.movies.Movie getDefaultInstanceForType() {
-      return com.avalon.protos.movies.Movie.getDefaultInstance();
+    public com.avalon.movies.Movie getDefaultInstanceForType() {
+      return com.avalon.movies.Movie.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.avalon.protos.movies.Movie build() {
-      com.avalon.protos.movies.Movie result = buildPartial();
+    public com.avalon.movies.Movie build() {
+      com.avalon.movies.Movie result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -550,15 +550,15 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.avalon.protos.movies.Movie buildPartial() {
-      com.avalon.protos.movies.Movie result = new com.avalon.protos.movies.Movie(this);
+    public com.avalon.movies.Movie buildPartial() {
+      com.avalon.movies.Movie result = new com.avalon.movies.Movie(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.avalon.protos.movies.Movie result) {
+    private void buildPartialRepeatedFields(com.avalon.movies.Movie result) {
       if (castBuilder_ == null) {
         if (((bitField0_ & 0x00000020) != 0)) {
           cast_ = java.util.Collections.unmodifiableList(cast_);
@@ -570,7 +570,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.avalon.protos.movies.Movie result) {
+    private void buildPartial0(com.avalon.movies.Movie result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.title_ = title_;
@@ -600,16 +600,16 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.avalon.protos.movies.Movie) {
-        return mergeFrom((com.avalon.protos.movies.Movie)other);
+      if (other instanceof com.avalon.movies.Movie) {
+        return mergeFrom((com.avalon.movies.Movie)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.avalon.protos.movies.Movie other) {
-      if (other == com.avalon.protos.movies.Movie.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.avalon.movies.Movie other) {
+      if (other == com.avalon.movies.Movie.getDefaultInstance()) return this;
       if (!other.getTitle().isEmpty()) {
         title_ = other.title_;
         bitField0_ |= 0x00000001;
@@ -711,9 +711,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 42
             case 58: {
-              com.avalon.protos.person.Person m =
+              com.avalon.person.Person m =
                   input.readMessage(
-                      com.avalon.protos.person.Person.parser(),
+                      com.avalon.person.Person.parser(),
                       extensionRegistry);
               if (castBuilder_ == null) {
                 ensureCastIsMutable();
@@ -1045,9 +1045,9 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private com.avalon.protos.genres.Genres genre_;
+    private com.avalon.genres.Genres genre_;
     private com.google.protobuf.SingleFieldBuilder<
-        com.avalon.protos.genres.Genres, com.avalon.protos.genres.Genres.Builder, com.avalon.protos.genres.GenresOrBuilder> genreBuilder_;
+        com.avalon.genres.Genres, com.avalon.genres.Genres.Builder, com.avalon.genres.GenresOrBuilder> genreBuilder_;
     /**
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      * @return Whether the genre field is set.
@@ -1059,9 +1059,9 @@ private static final long serialVersionUID = 0L;
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      * @return The genre.
      */
-    public com.avalon.protos.genres.Genres getGenre() {
+    public com.avalon.genres.Genres getGenre() {
       if (genreBuilder_ == null) {
-        return genre_ == null ? com.avalon.protos.genres.Genres.getDefaultInstance() : genre_;
+        return genre_ == null ? com.avalon.genres.Genres.getDefaultInstance() : genre_;
       } else {
         return genreBuilder_.getMessage();
       }
@@ -1069,7 +1069,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      */
-    public Builder setGenre(com.avalon.protos.genres.Genres value) {
+    public Builder setGenre(com.avalon.genres.Genres value) {
       if (genreBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1086,7 +1086,7 @@ private static final long serialVersionUID = 0L;
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      */
     public Builder setGenre(
-        com.avalon.protos.genres.Genres.Builder builderForValue) {
+        com.avalon.genres.Genres.Builder builderForValue) {
       if (genreBuilder_ == null) {
         genre_ = builderForValue.build();
       } else {
@@ -1099,11 +1099,11 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      */
-    public Builder mergeGenre(com.avalon.protos.genres.Genres value) {
+    public Builder mergeGenre(com.avalon.genres.Genres value) {
       if (genreBuilder_ == null) {
         if (((bitField0_ & 0x00000010) != 0) &&
           genre_ != null &&
-          genre_ != com.avalon.protos.genres.Genres.getDefaultInstance()) {
+          genre_ != com.avalon.genres.Genres.getDefaultInstance()) {
           getGenreBuilder().mergeFrom(value);
         } else {
           genre_ = value;
@@ -1133,7 +1133,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      */
-    public com.avalon.protos.genres.Genres.Builder getGenreBuilder() {
+    public com.avalon.genres.Genres.Builder getGenreBuilder() {
       bitField0_ |= 0x00000010;
       onChanged();
       return internalGetGenreFieldBuilder().getBuilder();
@@ -1141,23 +1141,23 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      */
-    public com.avalon.protos.genres.GenresOrBuilder getGenreOrBuilder() {
+    public com.avalon.genres.GenresOrBuilder getGenreOrBuilder() {
       if (genreBuilder_ != null) {
         return genreBuilder_.getMessageOrBuilder();
       } else {
         return genre_ == null ?
-            com.avalon.protos.genres.Genres.getDefaultInstance() : genre_;
+            com.avalon.genres.Genres.getDefaultInstance() : genre_;
       }
     }
     /**
      * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
      */
     private com.google.protobuf.SingleFieldBuilder<
-        com.avalon.protos.genres.Genres, com.avalon.protos.genres.Genres.Builder, com.avalon.protos.genres.GenresOrBuilder> 
+        com.avalon.genres.Genres, com.avalon.genres.Genres.Builder, com.avalon.genres.GenresOrBuilder> 
         internalGetGenreFieldBuilder() {
       if (genreBuilder_ == null) {
         genreBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-            com.avalon.protos.genres.Genres, com.avalon.protos.genres.Genres.Builder, com.avalon.protos.genres.GenresOrBuilder>(
+            com.avalon.genres.Genres, com.avalon.genres.Genres.Builder, com.avalon.genres.GenresOrBuilder>(
                 getGenre(),
                 getParentForChildren(),
                 isClean());
@@ -1166,22 +1166,22 @@ private static final long serialVersionUID = 0L;
       return genreBuilder_;
     }
 
-    private java.util.List<com.avalon.protos.person.Person> cast_ =
+    private java.util.List<com.avalon.person.Person> cast_ =
       java.util.Collections.emptyList();
     private void ensureCastIsMutable() {
       if (!((bitField0_ & 0x00000020) != 0)) {
-        cast_ = new java.util.ArrayList<com.avalon.protos.person.Person>(cast_);
+        cast_ = new java.util.ArrayList<com.avalon.person.Person>(cast_);
         bitField0_ |= 0x00000020;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilder<
-        com.avalon.protos.person.Person, com.avalon.protos.person.Person.Builder, com.avalon.protos.person.PersonOrBuilder> castBuilder_;
+        com.avalon.person.Person, com.avalon.person.Person.Builder, com.avalon.person.PersonOrBuilder> castBuilder_;
 
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public java.util.List<com.avalon.protos.person.Person> getCastList() {
+    public java.util.List<com.avalon.person.Person> getCastList() {
       if (castBuilder_ == null) {
         return java.util.Collections.unmodifiableList(cast_);
       } else {
@@ -1201,7 +1201,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public com.avalon.protos.person.Person getCast(int index) {
+    public com.avalon.person.Person getCast(int index) {
       if (castBuilder_ == null) {
         return cast_.get(index);
       } else {
@@ -1212,7 +1212,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
     public Builder setCast(
-        int index, com.avalon.protos.person.Person value) {
+        int index, com.avalon.person.Person value) {
       if (castBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1229,7 +1229,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
     public Builder setCast(
-        int index, com.avalon.protos.person.Person.Builder builderForValue) {
+        int index, com.avalon.person.Person.Builder builderForValue) {
       if (castBuilder_ == null) {
         ensureCastIsMutable();
         cast_.set(index, builderForValue.build());
@@ -1242,7 +1242,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public Builder addCast(com.avalon.protos.person.Person value) {
+    public Builder addCast(com.avalon.person.Person value) {
       if (castBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1259,7 +1259,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
     public Builder addCast(
-        int index, com.avalon.protos.person.Person value) {
+        int index, com.avalon.person.Person value) {
       if (castBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1276,7 +1276,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
     public Builder addCast(
-        com.avalon.protos.person.Person.Builder builderForValue) {
+        com.avalon.person.Person.Builder builderForValue) {
       if (castBuilder_ == null) {
         ensureCastIsMutable();
         cast_.add(builderForValue.build());
@@ -1290,7 +1290,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
     public Builder addCast(
-        int index, com.avalon.protos.person.Person.Builder builderForValue) {
+        int index, com.avalon.person.Person.Builder builderForValue) {
       if (castBuilder_ == null) {
         ensureCastIsMutable();
         cast_.add(index, builderForValue.build());
@@ -1304,7 +1304,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
     public Builder addAllCast(
-        java.lang.Iterable<? extends com.avalon.protos.person.Person> values) {
+        java.lang.Iterable<? extends com.avalon.person.Person> values) {
       if (castBuilder_ == null) {
         ensureCastIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1344,14 +1344,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public com.avalon.protos.person.Person.Builder getCastBuilder(
+    public com.avalon.person.Person.Builder getCastBuilder(
         int index) {
       return internalGetCastFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public com.avalon.protos.person.PersonOrBuilder getCastOrBuilder(
+    public com.avalon.person.PersonOrBuilder getCastOrBuilder(
         int index) {
       if (castBuilder_ == null) {
         return cast_.get(index);  } else {
@@ -1361,7 +1361,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public java.util.List<? extends com.avalon.protos.person.PersonOrBuilder> 
+    public java.util.List<? extends com.avalon.person.PersonOrBuilder> 
          getCastOrBuilderList() {
       if (castBuilder_ != null) {
         return castBuilder_.getMessageOrBuilderList();
@@ -1372,31 +1372,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public com.avalon.protos.person.Person.Builder addCastBuilder() {
+    public com.avalon.person.Person.Builder addCastBuilder() {
       return internalGetCastFieldBuilder().addBuilder(
-          com.avalon.protos.person.Person.getDefaultInstance());
+          com.avalon.person.Person.getDefaultInstance());
     }
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public com.avalon.protos.person.Person.Builder addCastBuilder(
+    public com.avalon.person.Person.Builder addCastBuilder(
         int index) {
       return internalGetCastFieldBuilder().addBuilder(
-          index, com.avalon.protos.person.Person.getDefaultInstance());
+          index, com.avalon.person.Person.getDefaultInstance());
     }
     /**
      * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
      */
-    public java.util.List<com.avalon.protos.person.Person.Builder> 
+    public java.util.List<com.avalon.person.Person.Builder> 
          getCastBuilderList() {
       return internalGetCastFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilder<
-        com.avalon.protos.person.Person, com.avalon.protos.person.Person.Builder, com.avalon.protos.person.PersonOrBuilder> 
+        com.avalon.person.Person, com.avalon.person.Person.Builder, com.avalon.person.PersonOrBuilder> 
         internalGetCastFieldBuilder() {
       if (castBuilder_ == null) {
         castBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-            com.avalon.protos.person.Person, com.avalon.protos.person.Person.Builder, com.avalon.protos.person.PersonOrBuilder>(
+            com.avalon.person.Person, com.avalon.person.Person.Builder, com.avalon.person.PersonOrBuilder>(
                 cast_,
                 ((bitField0_ & 0x00000020) != 0),
                 getParentForChildren(),
@@ -1410,12 +1410,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:avalon.movies.Movie)
-  private static final com.avalon.protos.movies.Movie DEFAULT_INSTANCE;
+  private static final com.avalon.movies.Movie DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.avalon.protos.movies.Movie();
+    DEFAULT_INSTANCE = new com.avalon.movies.Movie();
   }
 
-  public static com.avalon.protos.movies.Movie getDefaultInstance() {
+  public static com.avalon.movies.Movie getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -1451,7 +1451,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  public com.avalon.protos.movies.Movie getDefaultInstanceForType() {
+  public com.avalon.movies.Movie getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

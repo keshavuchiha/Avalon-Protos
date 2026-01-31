@@ -3,7 +3,7 @@
 // source: person/person.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.person;
+package com.avalon.person;
 
 @com.google.protobuf.Generated
 public interface PersonOrBuilder extends
@@ -40,12 +40,12 @@ public interface PersonOrBuilder extends
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
-  java.util.List<com.avalon.protos.person.contact.Contact> 
+  java.util.List<com.avalon.person.contact.Contact> 
       getContactsList();
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
-  com.avalon.protos.person.contact.Contact getContacts(int index);
+  com.avalon.person.contact.Contact getContacts(int index);
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
@@ -53,11 +53,11 @@ public interface PersonOrBuilder extends
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
-  java.util.List<? extends com.avalon.protos.person.contact.ContactOrBuilder> 
+  java.util.List<? extends com.avalon.person.contact.ContactOrBuilder> 
       getContactsOrBuilderList();
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
-  com.avalon.protos.person.contact.ContactOrBuilder getContactsOrBuilder(
+  com.avalon.person.contact.ContactOrBuilder getContactsOrBuilder(
       int index);
 }

@@ -3,7 +3,7 @@
 // source: movies/movie.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.movies;
+package com.avalon.movies;
 
 @com.google.protobuf.Generated
 public interface MovieOrBuilder extends
@@ -69,21 +69,21 @@ public interface MovieOrBuilder extends
    * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
    * @return The genre.
    */
-  com.avalon.protos.genres.Genres getGenre();
+  com.avalon.genres.Genres getGenre();
   /**
    * <code>optional .avalon.genres.Genres genre = 5 [json_name = "genre"];</code>
    */
-  com.avalon.protos.genres.GenresOrBuilder getGenreOrBuilder();
+  com.avalon.genres.GenresOrBuilder getGenreOrBuilder();
 
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
-  java.util.List<com.avalon.protos.person.Person> 
+  java.util.List<com.avalon.person.Person> 
       getCastList();
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
-  com.avalon.protos.person.Person getCast(int index);
+  com.avalon.person.Person getCast(int index);
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
@@ -91,11 +91,11 @@ public interface MovieOrBuilder extends
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
-  java.util.List<? extends com.avalon.protos.person.PersonOrBuilder> 
+  java.util.List<? extends com.avalon.person.PersonOrBuilder> 
       getCastOrBuilderList();
   /**
    * <code>repeated .avalon.person.Person cast = 7 [json_name = "cast"];</code>
    */
-  com.avalon.protos.person.PersonOrBuilder getCastOrBuilder(
+  com.avalon.person.PersonOrBuilder getCastOrBuilder(
       int index);
 }

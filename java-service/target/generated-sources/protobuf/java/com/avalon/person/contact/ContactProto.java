@@ -3,11 +3,11 @@
 // source: person/contact/contact.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.person.contact;
+package com.avalon.person.contact;
 
 @com.google.protobuf.Generated
-public final class ContactOuterClass extends com.google.protobuf.GeneratedFile {
-  private ContactOuterClass() {}
+public final class ContactProto extends com.google.protobuf.GeneratedFile {
+  private ContactProto() {}
   static {
     com.google.protobuf.RuntimeVersion.validateProtobufGencodeVersion(
       com.google.protobuf.RuntimeVersion.RuntimeDomain.PUBLIC,
@@ -15,7 +15,7 @@ public final class ContactOuterClass extends com.google.protobuf.GeneratedFile {
       /* minor= */ 33,
       /* patch= */ 5,
       /* suffix= */ "",
-      "ContactOuterClass");
+      "ContactProto");
   }
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
@@ -43,8 +43,11 @@ public final class ContactOuterClass extends com.google.protobuf.GeneratedFile {
       "\n\034person/contact/contact.proto\022\025avalon.p" +
       "erson.contact\"\\\n\007Contact\022\024\n\005email\030\001 \001(\tR" +
       "\005email\022!\n\014phone_number\030\002 \001(\tR\013phoneNumbe" +
-      "r\022\030\n\007address\030\003 \001(\tR\007addressB$\n com.avalo" +
-      "n.protos.person.contactP\001b\006proto3"
+      "r\022\030\n\007address\030\003 \001(\tR\007addressB\237\001\n\031com.aval" +
+      "on.person.contactB\014ContactProtoP\001\242\002\003APC\252" +
+      "\002\025Avalon.Person.Contact\312\002\025Avalon\\Person\\" +
+      "Contact\342\002!Avalon\\Person\\Contact\\GPBMetad" +
+      "ata\352\002\027Avalon::Person::Contactb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

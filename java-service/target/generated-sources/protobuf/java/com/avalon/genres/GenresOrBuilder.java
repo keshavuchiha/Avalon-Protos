@@ -3,7 +3,7 @@
 // source: genres/genre.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.genres;
+package com.avalon.genres;
 
 @com.google.protobuf.Generated
 public interface GenresOrBuilder extends
@@ -14,7 +14,7 @@ public interface GenresOrBuilder extends
    * <code>repeated .avalon.genres.Genre genres = 1 [json_name = "genres"];</code>
    * @return A list containing the genres.
    */
-  java.util.List<com.avalon.protos.genres.Genre> getGenresList();
+  java.util.List<com.avalon.genres.Genre> getGenresList();
   /**
    * <code>repeated .avalon.genres.Genre genres = 1 [json_name = "genres"];</code>
    * @return The count of genres.
@@ -25,7 +25,7 @@ public interface GenresOrBuilder extends
    * @param index The index of the element to return.
    * @return The genres at the given index.
    */
-  com.avalon.protos.genres.Genre getGenres(int index);
+  com.avalon.genres.Genre getGenres(int index);
   /**
    * <code>repeated .avalon.genres.Genre genres = 1 [json_name = "genres"];</code>
    * @return A list containing the enum numeric values on the wire for genres.

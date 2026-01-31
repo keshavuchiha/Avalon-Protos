@@ -3,7 +3,7 @@
 // source: genres/genre.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.genres;
+package com.avalon.genres;
 
 /**
  * Protobuf type {@code avalon.genres.Genres}
@@ -33,15 +33,15 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.avalon.protos.genres.GenreOuterClass.internal_static_avalon_genres_Genres_descriptor;
+    return com.avalon.genres.GenreProto.internal_static_avalon_genres_Genres_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.avalon.protos.genres.GenreOuterClass.internal_static_avalon_genres_Genres_fieldAccessorTable
+    return com.avalon.genres.GenreProto.internal_static_avalon_genres_Genres_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.avalon.protos.genres.Genres.class, com.avalon.protos.genres.Genres.Builder.class);
+            com.avalon.genres.Genres.class, com.avalon.genres.Genres.Builder.class);
   }
 
   public static final int GENRES_FIELD_NUMBER = 1;
@@ -49,12 +49,12 @@ private static final long serialVersionUID = 0L;
   private com.google.protobuf.Internal.IntList genres_ =
       emptyIntList();
   private static final     com.google.protobuf.Internal.IntListAdapter.IntConverter<
-      com.avalon.protos.genres.Genre> genres_converter_ =
+      com.avalon.genres.Genre> genres_converter_ =
           new com.google.protobuf.Internal.IntListAdapter.IntConverter<
-              com.avalon.protos.genres.Genre>() {
-            public com.avalon.protos.genres.Genre convert(int from) {
-              com.avalon.protos.genres.Genre result = com.avalon.protos.genres.Genre.forNumber(from);
-              return result == null ? com.avalon.protos.genres.Genre.UNRECOGNIZED : result;
+              com.avalon.genres.Genre>() {
+            public com.avalon.genres.Genre convert(int from) {
+              com.avalon.genres.Genre result = com.avalon.genres.Genre.forNumber(from);
+              return result == null ? com.avalon.genres.Genre.UNRECOGNIZED : result;
             }
           };
   /**
@@ -62,9 +62,9 @@ private static final long serialVersionUID = 0L;
    * @return A list containing the genres.
    */
   @java.lang.Override
-  public java.util.List<com.avalon.protos.genres.Genre> getGenresList() {
+  public java.util.List<com.avalon.genres.Genre> getGenresList() {
     return new com.google.protobuf.Internal.IntListAdapter<
-        com.avalon.protos.genres.Genre>(genres_, genres_converter_);
+        com.avalon.genres.Genre>(genres_, genres_converter_);
   }
   /**
    * <code>repeated .avalon.genres.Genre genres = 1 [json_name = "genres"];</code>
@@ -80,7 +80,7 @@ private static final long serialVersionUID = 0L;
    * @return The genres at the given index.
    */
   @java.lang.Override
-  public com.avalon.protos.genres.Genre getGenres(int index) {
+  public com.avalon.genres.Genre getGenres(int index) {
     return genres_converter_.convert(genres_.getInt(index));
   }
   /**
@@ -156,10 +156,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.avalon.protos.genres.Genres)) {
+    if (!(obj instanceof com.avalon.genres.Genres)) {
       return super.equals(obj);
     }
-    com.avalon.protos.genres.Genres other = (com.avalon.protos.genres.Genres) obj;
+    com.avalon.genres.Genres other = (com.avalon.genres.Genres) obj;
 
     if (!genres_.equals(other.genres_)) return false;
     if (!getUnknownFields().equals(other.getUnknownFields())) return false;
@@ -182,44 +182,44 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(byte[] data)
+  public static com.avalon.genres.Genres parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(java.io.InputStream input)
+  public static com.avalon.genres.Genres parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -227,26 +227,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static com.avalon.protos.genres.Genres parseDelimitedFrom(java.io.InputStream input)
+  public static com.avalon.genres.Genres parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static com.avalon.protos.genres.Genres parseDelimitedFrom(
+  public static com.avalon.genres.Genres parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.genres.Genres parseFrom(
+  public static com.avalon.genres.Genres parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -259,7 +259,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.avalon.protos.genres.Genres prototype) {
+  public static Builder newBuilder(com.avalon.genres.Genres prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -280,21 +280,21 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:avalon.genres.Genres)
-      com.avalon.protos.genres.GenresOrBuilder {
+      com.avalon.genres.GenresOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.avalon.protos.genres.GenreOuterClass.internal_static_avalon_genres_Genres_descriptor;
+      return com.avalon.genres.GenreProto.internal_static_avalon_genres_Genres_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.avalon.protos.genres.GenreOuterClass.internal_static_avalon_genres_Genres_fieldAccessorTable
+      return com.avalon.genres.GenreProto.internal_static_avalon_genres_Genres_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.avalon.protos.genres.Genres.class, com.avalon.protos.genres.Genres.Builder.class);
+              com.avalon.genres.Genres.class, com.avalon.genres.Genres.Builder.class);
     }
 
-    // Construct using com.avalon.protos.genres.Genres.newBuilder()
+    // Construct using com.avalon.genres.Genres.newBuilder()
     private Builder() {
 
     }
@@ -315,17 +315,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.avalon.protos.genres.GenreOuterClass.internal_static_avalon_genres_Genres_descriptor;
+      return com.avalon.genres.GenreProto.internal_static_avalon_genres_Genres_descriptor;
     }
 
     @java.lang.Override
-    public com.avalon.protos.genres.Genres getDefaultInstanceForType() {
-      return com.avalon.protos.genres.Genres.getDefaultInstance();
+    public com.avalon.genres.Genres getDefaultInstanceForType() {
+      return com.avalon.genres.Genres.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.avalon.protos.genres.Genres build() {
-      com.avalon.protos.genres.Genres result = buildPartial();
+    public com.avalon.genres.Genres build() {
+      com.avalon.genres.Genres result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -333,14 +333,14 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.avalon.protos.genres.Genres buildPartial() {
-      com.avalon.protos.genres.Genres result = new com.avalon.protos.genres.Genres(this);
+    public com.avalon.genres.Genres buildPartial() {
+      com.avalon.genres.Genres result = new com.avalon.genres.Genres(this);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial0(com.avalon.protos.genres.Genres result) {
+    private void buildPartial0(com.avalon.genres.Genres result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         genres_.makeImmutable();
@@ -350,16 +350,16 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.avalon.protos.genres.Genres) {
-        return mergeFrom((com.avalon.protos.genres.Genres)other);
+      if (other instanceof com.avalon.genres.Genres) {
+        return mergeFrom((com.avalon.genres.Genres)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.avalon.protos.genres.Genres other) {
-      if (other == com.avalon.protos.genres.Genres.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.avalon.genres.Genres other) {
+      if (other == com.avalon.genres.Genres.getDefaultInstance()) return this;
       if (!other.genres_.isEmpty()) {
         if (genres_.isEmpty()) {
           genres_ = other.genres_;
@@ -441,9 +441,9 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.genres.Genre genres = 1 [json_name = "genres"];</code>
      * @return A list containing the genres.
      */
-    public java.util.List<com.avalon.protos.genres.Genre> getGenresList() {
+    public java.util.List<com.avalon.genres.Genre> getGenresList() {
       return new com.google.protobuf.Internal.IntListAdapter<
-          com.avalon.protos.genres.Genre>(genres_, genres_converter_);
+          com.avalon.genres.Genre>(genres_, genres_converter_);
     }
     /**
      * <code>repeated .avalon.genres.Genre genres = 1 [json_name = "genres"];</code>
@@ -457,7 +457,7 @@ private static final long serialVersionUID = 0L;
      * @param index The index of the element to return.
      * @return The genres at the given index.
      */
-    public com.avalon.protos.genres.Genre getGenres(int index) {
+    public com.avalon.genres.Genre getGenres(int index) {
       return genres_converter_.convert(genres_.getInt(index));
     }
     /**
@@ -467,7 +467,7 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder setGenres(
-        int index, com.avalon.protos.genres.Genre value) {
+        int index, com.avalon.genres.Genre value) {
       if (value == null) { throw new NullPointerException(); }
       ensureGenresIsMutable();
       genres_.setInt(index, value.getNumber());
@@ -479,7 +479,7 @@ private static final long serialVersionUID = 0L;
      * @param value The genres to add.
      * @return This builder for chaining.
      */
-    public Builder addGenres(com.avalon.protos.genres.Genre value) {
+    public Builder addGenres(com.avalon.genres.Genre value) {
       if (value == null) { throw new NullPointerException(); }
       ensureGenresIsMutable();
       genres_.addInt(value.getNumber());
@@ -492,9 +492,9 @@ private static final long serialVersionUID = 0L;
      * @return This builder for chaining.
      */
     public Builder addAllGenres(
-        java.lang.Iterable<? extends com.avalon.protos.genres.Genre> values) {
+        java.lang.Iterable<? extends com.avalon.genres.Genre> values) {
       ensureGenresIsMutable();
-      for (com.avalon.protos.genres.Genre value : values) {
+      for (com.avalon.genres.Genre value : values) {
         genres_.addInt(value.getNumber());
       }
       onChanged();
@@ -570,12 +570,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:avalon.genres.Genres)
-  private static final com.avalon.protos.genres.Genres DEFAULT_INSTANCE;
+  private static final com.avalon.genres.Genres DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.avalon.protos.genres.Genres();
+    DEFAULT_INSTANCE = new com.avalon.genres.Genres();
   }
 
-  public static com.avalon.protos.genres.Genres getDefaultInstance() {
+  public static com.avalon.genres.Genres getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -611,7 +611,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  public com.avalon.protos.genres.Genres getDefaultInstanceForType() {
+  public com.avalon.genres.Genres getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

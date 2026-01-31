@@ -3,7 +3,7 @@
 // source: person/contact/contact.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.person.contact;
+package com.avalon.person.contact;
 
 @com.google.protobuf.Generated
 public interface ContactOrBuilder extends

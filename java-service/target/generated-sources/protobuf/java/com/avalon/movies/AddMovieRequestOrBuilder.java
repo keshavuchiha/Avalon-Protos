@@ -3,7 +3,7 @@
 // source: movies/movie.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.movies;
+package com.avalon.movies;
 
 @com.google.protobuf.Generated
 public interface AddMovieRequestOrBuilder extends
@@ -19,9 +19,9 @@ public interface AddMovieRequestOrBuilder extends
    * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
    * @return The movie.
    */
-  com.avalon.protos.movies.Movie getMovie();
+  com.avalon.movies.Movie getMovie();
   /**
    * <code>.avalon.movies.Movie movie = 1 [json_name = "movie"];</code>
    */
-  com.avalon.protos.movies.MovieOrBuilder getMovieOrBuilder();
+  com.avalon.movies.MovieOrBuilder getMovieOrBuilder();
 }

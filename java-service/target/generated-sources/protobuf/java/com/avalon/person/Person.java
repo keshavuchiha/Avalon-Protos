@@ -3,7 +3,7 @@
 // source: person/person.proto
 // Protobuf Java Version: 4.33.5
 
-package com.avalon.protos.person;
+package com.avalon.person;
 
 /**
  * Protobuf type {@code avalon.person.Person}
@@ -34,15 +34,15 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.avalon.protos.person.PersonOuterClass.internal_static_avalon_person_Person_descriptor;
+    return com.avalon.person.PersonProto.internal_static_avalon_person_Person_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.avalon.protos.person.PersonOuterClass.internal_static_avalon_person_Person_fieldAccessorTable
+    return com.avalon.person.PersonProto.internal_static_avalon_person_Person_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.avalon.protos.person.Person.class, com.avalon.protos.person.Person.Builder.class);
+            com.avalon.person.Person.class, com.avalon.person.Person.Builder.class);
   }
 
   private int bitField0_;
@@ -113,19 +113,19 @@ private static final long serialVersionUID = 0L;
 
   public static final int CONTACTS_FIELD_NUMBER = 3;
   @SuppressWarnings("serial")
-  private java.util.List<com.avalon.protos.person.contact.Contact> contacts_;
+  private java.util.List<com.avalon.person.contact.Contact> contacts_;
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
   @java.lang.Override
-  public java.util.List<com.avalon.protos.person.contact.Contact> getContactsList() {
+  public java.util.List<com.avalon.person.contact.Contact> getContactsList() {
     return contacts_;
   }
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
   @java.lang.Override
-  public java.util.List<? extends com.avalon.protos.person.contact.ContactOrBuilder> 
+  public java.util.List<? extends com.avalon.person.contact.ContactOrBuilder> 
       getContactsOrBuilderList() {
     return contacts_;
   }
@@ -140,14 +140,14 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
   @java.lang.Override
-  public com.avalon.protos.person.contact.Contact getContacts(int index) {
+  public com.avalon.person.contact.Contact getContacts(int index) {
     return contacts_.get(index);
   }
   /**
    * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
    */
   @java.lang.Override
-  public com.avalon.protos.person.contact.ContactOrBuilder getContactsOrBuilder(
+  public com.avalon.person.contact.ContactOrBuilder getContactsOrBuilder(
       int index) {
     return contacts_.get(index);
   }
@@ -205,10 +205,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.avalon.protos.person.Person)) {
+    if (!(obj instanceof com.avalon.person.Person)) {
       return super.equals(obj);
     }
-    com.avalon.protos.person.Person other = (com.avalon.protos.person.Person) obj;
+    com.avalon.person.Person other = (com.avalon.person.Person) obj;
 
     if (!getName()
         .equals(other.getName())) return false;
@@ -245,44 +245,44 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.person.Person parseFrom(byte[] data)
+  public static com.avalon.person.Person parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.avalon.protos.person.Person parseFrom(java.io.InputStream input)
+  public static com.avalon.person.Person parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -290,26 +290,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static com.avalon.protos.person.Person parseDelimitedFrom(java.io.InputStream input)
+  public static com.avalon.person.Person parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static com.avalon.protos.person.Person parseDelimitedFrom(
+  public static com.avalon.person.Person parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static com.avalon.protos.person.Person parseFrom(
+  public static com.avalon.person.Person parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -322,7 +322,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.avalon.protos.person.Person prototype) {
+  public static Builder newBuilder(com.avalon.person.Person prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -343,21 +343,21 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:avalon.person.Person)
-      com.avalon.protos.person.PersonOrBuilder {
+      com.avalon.person.PersonOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.avalon.protos.person.PersonOuterClass.internal_static_avalon_person_Person_descriptor;
+      return com.avalon.person.PersonProto.internal_static_avalon_person_Person_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.avalon.protos.person.PersonOuterClass.internal_static_avalon_person_Person_fieldAccessorTable
+      return com.avalon.person.PersonProto.internal_static_avalon_person_Person_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.avalon.protos.person.Person.class, com.avalon.protos.person.Person.Builder.class);
+              com.avalon.person.Person.class, com.avalon.person.Person.Builder.class);
     }
 
-    // Construct using com.avalon.protos.person.Person.newBuilder()
+    // Construct using com.avalon.person.Person.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -397,17 +397,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.avalon.protos.person.PersonOuterClass.internal_static_avalon_person_Person_descriptor;
+      return com.avalon.person.PersonProto.internal_static_avalon_person_Person_descriptor;
     }
 
     @java.lang.Override
-    public com.avalon.protos.person.Person getDefaultInstanceForType() {
-      return com.avalon.protos.person.Person.getDefaultInstance();
+    public com.avalon.person.Person getDefaultInstanceForType() {
+      return com.avalon.person.Person.getDefaultInstance();
     }
 
     @java.lang.Override
-    public com.avalon.protos.person.Person build() {
-      com.avalon.protos.person.Person result = buildPartial();
+    public com.avalon.person.Person build() {
+      com.avalon.person.Person result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -415,15 +415,15 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public com.avalon.protos.person.Person buildPartial() {
-      com.avalon.protos.person.Person result = new com.avalon.protos.person.Person(this);
+    public com.avalon.person.Person buildPartial() {
+      com.avalon.person.Person result = new com.avalon.person.Person(this);
       buildPartialRepeatedFields(result);
       if (bitField0_ != 0) { buildPartial0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartialRepeatedFields(com.avalon.protos.person.Person result) {
+    private void buildPartialRepeatedFields(com.avalon.person.Person result) {
       if (contactsBuilder_ == null) {
         if (((bitField0_ & 0x00000004) != 0)) {
           contacts_ = java.util.Collections.unmodifiableList(contacts_);
@@ -435,7 +435,7 @@ private static final long serialVersionUID = 0L;
       }
     }
 
-    private void buildPartial0(com.avalon.protos.person.Person result) {
+    private void buildPartial0(com.avalon.person.Person result) {
       int from_bitField0_ = bitField0_;
       if (((from_bitField0_ & 0x00000001) != 0)) {
         result.name_ = name_;
@@ -452,16 +452,16 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.avalon.protos.person.Person) {
-        return mergeFrom((com.avalon.protos.person.Person)other);
+      if (other instanceof com.avalon.person.Person) {
+        return mergeFrom((com.avalon.person.Person)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.avalon.protos.person.Person other) {
-      if (other == com.avalon.protos.person.Person.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.avalon.person.Person other) {
+      if (other == com.avalon.person.Person.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         bitField0_ |= 0x00000001;
@@ -535,9 +535,9 @@ private static final long serialVersionUID = 0L;
               break;
             } // case 18
             case 26: {
-              com.avalon.protos.person.contact.Contact m =
+              com.avalon.person.contact.Contact m =
                   input.readMessage(
-                      com.avalon.protos.person.contact.Contact.parser(),
+                      com.avalon.person.contact.Contact.parser(),
                       extensionRegistry);
               if (contactsBuilder_ == null) {
                 ensureContactsIsMutable();
@@ -757,22 +757,22 @@ private static final long serialVersionUID = 0L;
       return birthDateBuilder_;
     }
 
-    private java.util.List<com.avalon.protos.person.contact.Contact> contacts_ =
+    private java.util.List<com.avalon.person.contact.Contact> contacts_ =
       java.util.Collections.emptyList();
     private void ensureContactsIsMutable() {
       if (!((bitField0_ & 0x00000004) != 0)) {
-        contacts_ = new java.util.ArrayList<com.avalon.protos.person.contact.Contact>(contacts_);
+        contacts_ = new java.util.ArrayList<com.avalon.person.contact.Contact>(contacts_);
         bitField0_ |= 0x00000004;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilder<
-        com.avalon.protos.person.contact.Contact, com.avalon.protos.person.contact.Contact.Builder, com.avalon.protos.person.contact.ContactOrBuilder> contactsBuilder_;
+        com.avalon.person.contact.Contact, com.avalon.person.contact.Contact.Builder, com.avalon.person.contact.ContactOrBuilder> contactsBuilder_;
 
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public java.util.List<com.avalon.protos.person.contact.Contact> getContactsList() {
+    public java.util.List<com.avalon.person.contact.Contact> getContactsList() {
       if (contactsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(contacts_);
       } else {
@@ -792,7 +792,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public com.avalon.protos.person.contact.Contact getContacts(int index) {
+    public com.avalon.person.contact.Contact getContacts(int index) {
       if (contactsBuilder_ == null) {
         return contacts_.get(index);
       } else {
@@ -803,7 +803,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
     public Builder setContacts(
-        int index, com.avalon.protos.person.contact.Contact value) {
+        int index, com.avalon.person.contact.Contact value) {
       if (contactsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -820,7 +820,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
     public Builder setContacts(
-        int index, com.avalon.protos.person.contact.Contact.Builder builderForValue) {
+        int index, com.avalon.person.contact.Contact.Builder builderForValue) {
       if (contactsBuilder_ == null) {
         ensureContactsIsMutable();
         contacts_.set(index, builderForValue.build());
@@ -833,7 +833,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public Builder addContacts(com.avalon.protos.person.contact.Contact value) {
+    public Builder addContacts(com.avalon.person.contact.Contact value) {
       if (contactsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -850,7 +850,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
     public Builder addContacts(
-        int index, com.avalon.protos.person.contact.Contact value) {
+        int index, com.avalon.person.contact.Contact value) {
       if (contactsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -867,7 +867,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
     public Builder addContacts(
-        com.avalon.protos.person.contact.Contact.Builder builderForValue) {
+        com.avalon.person.contact.Contact.Builder builderForValue) {
       if (contactsBuilder_ == null) {
         ensureContactsIsMutable();
         contacts_.add(builderForValue.build());
@@ -881,7 +881,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
     public Builder addContacts(
-        int index, com.avalon.protos.person.contact.Contact.Builder builderForValue) {
+        int index, com.avalon.person.contact.Contact.Builder builderForValue) {
       if (contactsBuilder_ == null) {
         ensureContactsIsMutable();
         contacts_.add(index, builderForValue.build());
@@ -895,7 +895,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
     public Builder addAllContacts(
-        java.lang.Iterable<? extends com.avalon.protos.person.contact.Contact> values) {
+        java.lang.Iterable<? extends com.avalon.person.contact.Contact> values) {
       if (contactsBuilder_ == null) {
         ensureContactsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -935,14 +935,14 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public com.avalon.protos.person.contact.Contact.Builder getContactsBuilder(
+    public com.avalon.person.contact.Contact.Builder getContactsBuilder(
         int index) {
       return internalGetContactsFieldBuilder().getBuilder(index);
     }
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public com.avalon.protos.person.contact.ContactOrBuilder getContactsOrBuilder(
+    public com.avalon.person.contact.ContactOrBuilder getContactsOrBuilder(
         int index) {
       if (contactsBuilder_ == null) {
         return contacts_.get(index);  } else {
@@ -952,7 +952,7 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public java.util.List<? extends com.avalon.protos.person.contact.ContactOrBuilder> 
+    public java.util.List<? extends com.avalon.person.contact.ContactOrBuilder> 
          getContactsOrBuilderList() {
       if (contactsBuilder_ != null) {
         return contactsBuilder_.getMessageOrBuilderList();
@@ -963,31 +963,31 @@ private static final long serialVersionUID = 0L;
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public com.avalon.protos.person.contact.Contact.Builder addContactsBuilder() {
+    public com.avalon.person.contact.Contact.Builder addContactsBuilder() {
       return internalGetContactsFieldBuilder().addBuilder(
-          com.avalon.protos.person.contact.Contact.getDefaultInstance());
+          com.avalon.person.contact.Contact.getDefaultInstance());
     }
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public com.avalon.protos.person.contact.Contact.Builder addContactsBuilder(
+    public com.avalon.person.contact.Contact.Builder addContactsBuilder(
         int index) {
       return internalGetContactsFieldBuilder().addBuilder(
-          index, com.avalon.protos.person.contact.Contact.getDefaultInstance());
+          index, com.avalon.person.contact.Contact.getDefaultInstance());
     }
     /**
      * <code>repeated .avalon.person.contact.Contact contacts = 3 [json_name = "contacts"];</code>
      */
-    public java.util.List<com.avalon.protos.person.contact.Contact.Builder> 
+    public java.util.List<com.avalon.person.contact.Contact.Builder> 
          getContactsBuilderList() {
       return internalGetContactsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilder<
-        com.avalon.protos.person.contact.Contact, com.avalon.protos.person.contact.Contact.Builder, com.avalon.protos.person.contact.ContactOrBuilder> 
+        com.avalon.person.contact.Contact, com.avalon.person.contact.Contact.Builder, com.avalon.person.contact.ContactOrBuilder> 
         internalGetContactsFieldBuilder() {
       if (contactsBuilder_ == null) {
         contactsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-            com.avalon.protos.person.contact.Contact, com.avalon.protos.person.contact.Contact.Builder, com.avalon.protos.person.contact.ContactOrBuilder>(
+            com.avalon.person.contact.Contact, com.avalon.person.contact.Contact.Builder, com.avalon.person.contact.ContactOrBuilder>(
                 contacts_,
                 ((bitField0_ & 0x00000004) != 0),
                 getParentForChildren(),
@@ -1001,12 +1001,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:avalon.person.Person)
-  private static final com.avalon.protos.person.Person DEFAULT_INSTANCE;
+  private static final com.avalon.person.Person DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.avalon.protos.person.Person();
+    DEFAULT_INSTANCE = new com.avalon.person.Person();
   }
 
-  public static com.avalon.protos.person.Person getDefaultInstance() {
+  public static com.avalon.person.Person getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -1042,7 +1042,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  public com.avalon.protos.person.Person getDefaultInstanceForType() {
+  public com.avalon.person.Person getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 
